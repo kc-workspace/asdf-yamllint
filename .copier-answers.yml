@@ -1,0 +1,44 @@
+---
+## Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v2.0.1
+_src_path: gh:kc-workspace/asdf-plugin-template.git
+addon_yaml:
+    archive: false
+    checksum: false
+    download: false
+    fetch: false
+    git: true
+    github: false
+    gpg: false
+    help: true
+    install: true
+    package: false
+    python: true
+    system: false
+    tags: true
+    version: true
+app_desc: A linter for YAML files.
+app_name: yamllint
+app_repo: https://github.com/adrienverge/yamllint
+app_type: python
+app_website: https://yamllint.readthedocs.io/
+checksum_enabled: false
+custom_bin_paths: bin
+custom_non_stable_version: (-src|-dev|-latest|-stm|[-\.]rc|-alpha|-beta|[-\.]pre|-next|snapshot|master)
+custom_require_commands: python
+gpg_enabled: false
+install_map_enabled: true
+install_map_method: link
+install_map_yaml:
+    venv/bin/yamllint: bin/yamllint
+plugin_author: Kamontat Chantrachirathumrong
+plugin_name: asdf-yamllint
+plugin_org: kc-workspace
+plugin_repo: https://github.com/kc-workspace/asdf-yamllint.git
+python_name: yamllint
+source_enabled: true
+source_type: git
+source_url: https://github.com/adrienverge/yamllint.git
+test_cmd_args: --version
+version_file_enabled: false
+version_prefix: v
