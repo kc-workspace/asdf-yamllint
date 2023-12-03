@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/kc-workspace/asdf-yamllint/compare/v1.0.0...v1.0.1) (2023-12-03)
+
+
+### Improvements
+
+* update plugin from template [autocommit] ([c404d1e](https://github.com/kc-workspace/asdf-yamllint/commit/c404d1eb6a2296d64374eea270a5e684742195ae))
+
 ## 1.0.0 (2023-11-06)
 
 
