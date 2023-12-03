@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+KC_ASDF_PYTHON_NAME="yamllint"
+export KC_ASDF_PYTHON_NAME
+
 kc_asdf_python() {
   local ns="python.addon"
   local cmd="python3"
@@ -32,7 +35,7 @@ kc_asdf_python_download() {
   if [ -f "$python" ]; then
     ## https://pip.pypa.io/en/stable/cli/pip_download/
     kc_asdf_exec "$python" -m pip \
-      download "$KC_ASDF_APP_NAME==$version" \
+      download "$KC_ASDF_PYTHON_NAME==$version" \
       --quiet --dest "$target"
     return $?
   fi
@@ -48,7 +51,7 @@ kc_asdf_python_install() {
   if [ -f "$python" ]; then
     ## https://pip.pypa.io/en/stable/cli/pip_install/
     kc_asdf_exec "$python" -m pip \
-      install "$KC_ASDF_APP_NAME" \
+      install "$KC_ASDF_PYTHON_NAME" \
       --quiet --progress-bar off --no-index --find-links "$target"
     return $?
   fi
